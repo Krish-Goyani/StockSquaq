@@ -1,0 +1,5 @@
+langchain-google-genai
+langchain
+requests
+crewai
+from dotenv import load_dotenv
