@@ -3,6 +3,7 @@ import os
 from tools.calculator_tools import CalculatorTools
 from tools.search_tools import SearchTools
 from tools.sec_tools import SECTools
+from tools.browser_tools import BrowserTools
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.tools.yahoo_finance_news import YahooFinanceNewsTool
 
@@ -21,7 +22,7 @@ class StockAnalysisAgents():
       verbose=True,
       llm=self.Gemini,
       tools=[
-        #BrowserTools.scrape_and_summarize_website,
+        BrowserTools.scrape_and_summarize_website,
         SearchTools.search_internet,
         CalculatorTools.calculate,
         SECTools.search_10q,
@@ -41,7 +42,7 @@ class StockAnalysisAgents():
       verbose=True,
       llm=self.Gemini,
       tools=[
-        #BrowserTools.scrape_and_summarize_website,
+        BrowserTools.scrape_and_summarize_website,
         SearchTools.search_internet,
         SearchTools.search_news,
         YahooFinanceNewsTool(),
@@ -62,7 +63,7 @@ class StockAnalysisAgents():
       verbose=True,
       llm=self.Gemini,
       tools=[
-        #BrowserTools.scrape_and_summarize_website,
+        BrowserTools.scrape_and_summarize_website,
         SearchTools.search_internet,
         SearchTools.search_news,
         CalculatorTools.calculate,
