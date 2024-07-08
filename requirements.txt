@@ -1,5 +1,17 @@
 langchain-google-genai
-langchain
 requests
-crewai
-from dotenv import load_dotenv
+python-dotenv
+embedchain
+crewai == 0.5.5
+langchain == 0.1.0
+langchain_community
+openai == 1.7.1
+unstructured == 0.10.25
+pyowm == 3.3.0
+tools == 0.1.9
+wikipedia == 1.4.0
+yfinance == 0.2.33
+sec-api == 1.0.17
+tiktoken == 0.5.2
+faiss-cpu == 1.7.4
+unstructured

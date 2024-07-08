@@ -15,7 +15,7 @@ class CalculatorTools:
         except SyntaxError:
             return "Error: Invalid syntax in mathematical expression"
 
-# from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field
 # from langchain.tools import tool
 
 # # Define a Pydantic model for the tool's input parameters

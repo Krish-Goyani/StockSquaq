@@ -1,1 +1,1 @@
-# Trip_Planner_AI
+# Stock-Squad
